@@ -1,0 +1,12 @@
+name = 'Mongo to Drupal'
+description = 'Custom module to migrate data from mongodb to drupal.'
+package = Mongo Migration
+core = 7.x
+dependencies[] = migrate
+dependencies[] = feature_mongo_migrate
+files[] = migrate_mongo.migrate.inc
+files[] = includes/MongoMigrateSource.inc
+files[] = includes/MongoDBConnection.inc
+files[] = migrate/terms.inc
+files[] = migrate/users.inc
+files[] = migrate/nodes.inc

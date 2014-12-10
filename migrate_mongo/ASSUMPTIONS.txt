@@ -1,0 +1,11 @@
+
+Assumptions
+------------
+1. Content fields which contain no data in all documents are assumed that they will not have data in all documents.
+   So those fields (data) are not migrated.
+2. As there is uid field in the document but no information for users, so users are created for those uids with dummy data.
+3. Taxonomy terms are assumed that if they are already existed in the system, then will not created.
+4. All fields which contains array values (multiple) values in same document, are migrated as taxonomy terms.
+5. Terms created from migration MigrateMongoTerms contains multiple values for single document and because migrate module
+   supports only one to one mapping for each row, these terms are created on fly and will not be removed if migration is
+   rollbacked.

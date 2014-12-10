@@ -1,0 +1,7 @@
+<?php
+
+/**
+ * @file
+ * Module file for migrate_mongo module.
+ * This file normally contains drupal related hooks.
+ */
